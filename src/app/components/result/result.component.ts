@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { OperationsService } from '../../services/operations.service';
 
 @Component({
   selector: 'app-result',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './result.component.css'
 })
 export class ResultComponent {
+public operationsSvc=inject(OperationsService)
 
 }
